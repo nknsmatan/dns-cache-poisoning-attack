@@ -6,8 +6,8 @@ A network security research tool implemented in C that demonstrates a distribute
 
 The project is split into a distributed architecture containing two components:
 
-1. Listening Server (ex2_server.c): Binds to the designated ports to capture the ephemeral source port used by the target resolver for outgoing queries. Once intercepted, it leaks the port to the attacking client via an established TCP control channel.
-2. Attacking Client (ex2_client.c): Receives the leaked port and orchestrates the core Kaminsky loop.
+1. Listening Server (Server.c): Binds to the designated ports to capture the ephemeral source port used by the target resolver for outgoing queries. Once intercepted, it leaks the port to the attacking client via an established TCP control channel.
+2. Attacking Client (Client.c): Receives the leaked port and orchestrates the core Kaminsky loop.
 
 ## Attack Vector Description
 
